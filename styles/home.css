@@ -1,0 +1,42 @@
+
+
+/* scroll menu */
+
+div.scrollmenu {
+  background-color: darkgray;
+  overflow: auto;
+  white-space: nowrap; 
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: cadetblue;
+}
+
+div.scrollmenu input[type=text] {
+      float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+/* header-logo */
+
+.header-logo {
+  padding: 80px;
+  text-align: center;
+  background-image: url(/images/header_logo.png);
+  background-repeat: no-repeat;
+  color: white;
+  background-color: darkcyan;
+}
+
