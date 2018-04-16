@@ -9,6 +9,8 @@
     
      <link rel="stylesheet" type="text/css" href="/styles/home.css">
      <link rel="stylesheet" type="text/css" href="/styles/meyer-reset.css">
+  
+    <script type="text/javascript" src="JS/script.js"></script>
 </head>
 <body>
   
@@ -21,34 +23,63 @@
 <div class="scrollmenu">
     
     <a href="Home">Home</a>
-    <a href="Energy Industry">Energy Industry</a>
+    <a href="EnergyIndustry">Energy Industry</a>
     <a href="Contact"> Contact Us</a>
-    <a href="FESC Ressearch">FESC Research</a>
+    <a href="FESCRessearch">FESC Research</a>
     <a href="Education">Education</a>
     <a href="Outreach">Outreach</a>
-    <a href="User Facilities">User Facilities</a>
-    <a href="Advisory Bord">Advisory Board</a>
+    <a href="UserFacilities">User Facilities</a>
+    <a href="AdvisoryBoard">Advisory Board</a>
     
     <input type="text" placeholder="Search..">
     
   </div> 
   
-  <div class="row">
-    <div class="side">.....</div>
-    <div class="main">.....</div>
+  <div class="main">
+    <div style="text-align:center">
+      <p>Our Location</p>
+      <p>P.O. Box 115500</p>
+      <p>Our address is: 272 Grinter Hall</p>
+      <p>Gainesville, FL 32611-5500</p>
+
+        <div id="map">
+        <p>Where we are located</p>
+  
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApACqbA7lS9wA2fjlJta5hxQw6wE8TTGM=map"></script>
   </div>
+      </div>
+        </div>
+    
+   
+    <div class="side">
+      <div style="text-align:center">
+    <h2> Contact Us</h2>
+    <p>Please fill out the following form</p>
   
+      <form action="/action_page.php">
+        <label for="fname"> First Name</label>
+         <input type="text" id="fname" name="firstname" placeholder="Your first name">
+        <label for="lastname"> Last Name</label>
+        <input type="text" id="lastname" name="lastname" placeholder="Your last name">
+        <label for="country"> Country</label>
+        <select id="country" name="country">
+          <option value="Canada">Canada</option>
+          <option value="USA">USA</option>
+          <option value="Mexico">Mexico</option> 
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write here"
+  style="height: 170px"></textarea>
+        <input type="submit" value="Submit">
+    </form>
+  </div>
+    </div>
+      
   
-  
-  
-  
- <div class="footer" >
-  
-  
+ <div class="footer">
   
   </div>
-  
-  
+
   
   </body>
   
