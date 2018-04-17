@@ -1,4 +1,5 @@
 <!-- Google Maps -->
+
 function myMap() {
   var myCenter = new google.maps.LatLng(51.508742,-0.120850);
   var mapCanvas = document.getElementById("map");
@@ -9,17 +10,4 @@ function myMap() {
 }
 
 
-
-<scritp src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApACqbA7lS9wA2fjlJta5hxQw6wE8TTGM=map"></script>
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-}
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApACqbA7lS9wA2fjlJta5hxQw6wE8TTGM=myMap"></script>

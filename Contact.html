@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <title>How to contact us</title>
@@ -10,8 +9,24 @@
      <link rel="stylesheet" type="text/css" href="/styles/home.css">
      <link rel="stylesheet" type="text/css" href="/styles/meyer-reset.css">
   
-    <script src="JS/script.js"></script>
-</head>
+  <!-- facebook tags -->
+ <meta property="og:title" content="Florda-Energy">
+ <meta property="og:description" content="Florida Energy Systms Consortium.">
+ <meta property="og:image" content="">
+ <meta property="og:url" content="https://leftygal.github.io/Florida-Energy/">
+ <meta property="og:type" content="website">
+  
+  
+  <!-- For Twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:image" content="" />
+  
+<script src="JS/script.js"></script>
+
+  </head>
+  
 <body>
   
   <div class="header-logo">
@@ -31,32 +46,17 @@
     <a href="UserFacilities">User Facilities</a>
     <a href="AdvisoryBoard">Advisory Board</a>
     
-    <input type="text" placeholder="Search..">
+    <input type="text" placeholder="Search">
     
   </div> 
   
-  <div class="row">
-    <div class="side">
-    <div style="text-align:center">
-      <p>Our Location</p>
-      <p>P.O. Box 115500</p>
-      <p>Our address is: 272 Grinter Hall</p>
-      <p>Gainesville, FL 32611-5500</p>
-      </div>
-
-        <div id="map">
-        <p>Where we are located</p>
-  
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApACqbA7lS9wA2fjlJta5hxQw6wE8TTGM=map"></script>
-          
-  </div>
-      </div>
-  
-    <div class="main">
-      <div style="text-align:center">
-    <h2> Contact Us</h2>
+  <div class="container">
+    <div style="text-align:left">
+    <h2>Contact Us</h2>
     <p>Please fill out the following form</p>
-  
+      </div>
+  <div class="row">
+    <div class="column">
       <form action="/action_page.php">
         <label for="fname"> First Name</label>
          <input type="text" id="fname" name="firstname" placeholder="Your first name">
@@ -73,16 +73,27 @@
   style="height: 170px"></textarea>
         <input type="submit" value="Submit">
     </form>
-  </div>
-    </div>
-    
+       
+    <div class="column">
+    <div style="text-align:center">
+      <p>Our Location</p>
+      <p>P.O. Box 115500</p>
+      <p>Our address is: 272 Grinter Hall</p>
+      <p>Gainesville, FL 32611-5500</p>
+
+      <div id="map">
+    </div>    
       
-  
+      </div>
+      </div>
+    </div>
+      </div>
+  </div>
+      
  <div class="footer">
   
   </div>
-
-  
+ 
   </body>
   
   
