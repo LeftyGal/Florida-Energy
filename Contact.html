@@ -29,6 +29,15 @@
   
 <body>
   
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+  
   <div class="header-logo">
   
     <h1>Florida Energy Systems Consortium (F.E.S.C.)</h1>
@@ -82,6 +91,20 @@
       <p>Gainesville, FL 32611-5500</p>
 
       <div id="map">
+        <script>
+        
+        function myMap() {
+  var myCenter = new google.maps.LatLng(51.508742,-0.120850);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 12};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+} 
+        </script>
+        
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApACqbA7lS9wA2fjlJta5hxQw6wE8TTGM=myMap"></script>
+        
     </div>    
       
       </div>
@@ -91,6 +114,8 @@
   </div>
       
  <div class="footer">
+   
+   <div class="fb-share-button" data-href="https://leftygal.github.io/Florida-Energy/" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fleftygal.github.io%2FFlorida-Energy%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
   
   </div>
  
