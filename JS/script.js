@@ -10,7 +10,7 @@ function myMap() {
 }
 
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApACqbA7lS9wA2fjlJta5hxQw6wE8TTGM=myMap"></script>
+
 
 
   (function(d, s, id) {

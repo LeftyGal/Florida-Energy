@@ -54,11 +54,10 @@ div.scrollmenu input[type=text] {
 }
 
 /* header-logo */
-
 .header-logo {
   padding: 80px;
   text-align: center;
-  background-image: url(images/header_logo.png);
+  background-image: url("https://raw.githubusercontent.com/LeftyGal/Florida-Energy/master/images/header_logo.png");
   background-repeat: no-repeat;
   color: white;
   background-color: darkcyan;
