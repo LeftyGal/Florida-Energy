@@ -49,12 +49,18 @@
 
   .header-right {
     float: none; } }
+/* Create three unequal columns that floats next to each other */
 .column {
   float: left;
-  width: 33.33%;
-  padding: 50px;
-  height: 200px;
+  padding: 10px;
+  height: 300px;
   /* Should be removed. Only for demonstration */ }
+
+.left, .right {
+  width: 25%; }
+
+.middle {
+  width: 50%; }
 
 /* Clear floats after the columns */
 .row:after {
