@@ -8,7 +8,7 @@
 <meta name="viewport" content="width-device-width, initial scale=1">
 <meta name="website" content="Florida Energy Systems Consortium"/>
    
-<link href="styles/home.css" type="text/css" rel="stylesheet"/>
+<link href="styles/new-style.css" type="text/css" rel="stylesheet"/>
 <link href="styles/meyer-reset.css" type="text/css" rel="stylesheet">
   
  <!-- facebook tags -->
@@ -55,12 +55,11 @@
 
 <body>
   
-  <div class="header-logo">
-    <h1>Florida Energy Systems Consortium (F.E.S.C.)</h1>
-    </div>
-  
-  <div class="scrollmenu">
-    <a href="index.html">Home</a>
+  <div class="header-logo"></div>
+  <div class="header">
+  <a href="contact.html" class="logo">Florida Energy Systems Consortium (F.E.S.C.)</a>
+  <div class="header-right">
+    <a class="active" href="/index.html">Home</a>
     <a href="energy_industry.html">Energy Industry</a>
     <a href="contact.html">Contact Us</a>
     <a href="FESC">FESC Research</a>
@@ -68,26 +67,32 @@
     <a href="Outreach">Outreach</a>
     <a href="UserFacilities">User Facilities</a>
     <a href="AdvisoryBoard">Advisory Board</a>
-    
-    <input type="text" placeholder="Search">
-    
-      </div>  
+  </div>
+</div>
   
+
   <div class="row">
     
-    <div class="side">
-    <a href="index.html">Home</a>
-    <a href="energy_industry.html">Energy Industry</a>
-    <a href="contact.html">Contact Us</a>
-    <a href="FESC">FESC Research</a>
-    <a href="Education">Education</a>
-    <a href="Outreach">Outreach</a>
-    <a href="UserFacilities">User Facilities</a>
-    <a href="AdvisoryBoard">Advisory Board</a>
+    <div class="column">
+      <div class="side">
+        <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">FESC</button>
+            <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+     <a href="/index.html">Home</a>
+    <a href="/energy_industry.html">Energy Industry</a>
+    <a href="/contact.html">Contact Us</a>
+    <a href="#">Fesc Research</a>
+    <a href="#">Education</a>
+    <a href="#">Outreach</a>
+    <a href="#">User Facilities</a>
+    <a href="#">Advisory Board</a>
       </div>
+        </div>
+          </div>
+            </div>
 
-    <div class="main">
-      
+    
     <h2>Wind</h2>
     <p>Hover over the image to see the effect.</p>
       
@@ -160,9 +165,11 @@
     </div>
       </div>
   
-  
+ 
+  <div class="aside">
 <a href="https://leftygal.github.io/Florida-Energy/"><img src="images/contact_image.jpg" alt="contact"></a>
 <a href="https://leftygal.github.io/Florida-Energy/"><img src="images/header_logo.jpeg" alt="Home"></a>
+  </div>
   
 <div class="footer">
   <p> Address:272 Grinter Hall</p>
