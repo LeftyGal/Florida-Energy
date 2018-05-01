@@ -6,6 +6,16 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+.iframe {
+  align: center;
+  border: 2px solid #0000ff;
+  display: block;
+  width: 300px;
+  height: 100px;
+  margin: auto; }
+  .iframe:span {
+    font: #0000ff; }
+
 .body {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px; }
@@ -60,15 +70,13 @@
 /* Create three unequal columns that floats next to each other */
 .column {
   float: left;
-  padding: 10px;
-  height: 300px;
-  /* Should be removed. Only for demonstration */ }
+  padding: 10px; }
 
 .left, .right {
-  width: 25%; }
+  width: 15%; }
 
 .middle {
-  width: 50%; }
+  width: 70%; }
 
 /* Clear floats after the columns */
 .row:after {
@@ -76,63 +84,45 @@
   display: table;
   clear: both; }
 
-/* Dropdown Button */
-.dropbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer; }
+/* The side navigation menu */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 60px; }
 
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #3e8e41; }
-
-/* The search field */
-#myInput {
-  border-box: box-sizing;
-  background-image: url("searchicon.png");
-  background-position: 14px 12px;
-  background-repeat: no-repeat;
-  font-size: 16px;
-  padding: 14px 20px 12px 45px;
-  border: none;
-  border-bottom: 1px solid #ddd; }
-
-/* The search field when it gets focus/clicked on */
-#myInput:focus {
-  outline: 3px solid #ddd; }
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block; }
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f6f6f6;
-  min-width: 230px;
-  border: 1px solid #ddd;
-  z-index: 1; }
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
+.sidenav a {
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
-  display: block; }
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #f1f1f1; }
+.sidenav a:hover {
+  color: #f1f1f1; }
 
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {
-  display: block; }
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px; }
 
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px; }
+
+  .sidenav a {
+    font-size: 18px; } }
 /* scroll menu */
 div.scrollmenu {
   background-color: darkgray;
@@ -202,8 +192,9 @@ div.scrollmenu input[type=text] {
 
 /* footer */
 .footer {
-  padding: 20px;
   text-align: center;
-  background: darkcyan; }
+  background: darkcyan;
+  width: 100%;
+  padding: 15px; }
 
 /*# sourceMappingURL=new-style.css.map */

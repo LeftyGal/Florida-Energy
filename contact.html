@@ -73,14 +73,13 @@
   </div>
 </div>
  
-  <div class="row">
+ <span style="color: blue; font-size:40px; cursor:pointer" onclick="openNav()">&#9776; FESC </span>
+  
+  <div class="row"> 
     <div class="column left">
-      <div class="side">
-        <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">FESC</button>
-            <div id="myDropdown" class="dropdown-content">
-    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-     <a href="/index.html">Home</a>
+        <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="/index.html">Home</a>
     <a href="/energy_industry.html">Energy Industry</a>
     <a href="/contact.html">Contact Us</a>
     <a href="#">Fesc Research</a>
@@ -88,10 +87,8 @@
     <a href="#">Outreach</a>
     <a href="#">User Facilities</a>
     <a href="#">Advisory Board</a>
-      </div>
-        </div>
-          </div>
-            </div>
+      </div>  
+    </div>
   
     <div class="column middle">
     <div class="container">
@@ -145,17 +142,20 @@ var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
   </div>
     
 
-<div class="footer">  
+<div class="footer">
   <p> Address:272 Grinter Hall</p>
   <p>P.O. Box 115500</p>
   <p>Gainesville, FL 32611-5500</p>
   <p>Tel:(352)294-2027 </p>
   
+   <div class="social">
   <div class="fb-share-button" data-href="https://leftygal.github.io/Florida-Energy/" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fleftygal.github.io%2FFlorida-Energy%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
   
   <a class="twitter-share-button"
   href="https://twitter.com/intent/tweet?text=Learn%20about%20the%20Florida%20Energy%20Systems%20Consortium ">Tweet</a>
+  </div>
   
+   <div class="newsletter">
   <form action="/action_page.php">
   <div class="newsletter">
   <h2>Subscribe to our Newsletter</h2>
@@ -163,21 +163,17 @@ var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
     <input type="text" placeholder="Email address" name="mail" required>
     <label>
       <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
-      </label>
+    </label>
       </div>
-
-  <div class="newsletter">
+    
     <input type="submit" value="Subscribe">
-    </div>
     </form>
       </div>
 
-    
-  </body>
-  </html>
-          
-          
-   
+    </div>
+
+</body>
+</html>
         
     
       
