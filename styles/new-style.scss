@@ -228,6 +228,21 @@ div.scrollmenu input[type=text] {
   text-align: center;
   background: darkcyan;
   width: 100%;
-  padding: 15px;
+  padding: 5px;
+  padding-bottom: 2px;
+}
+
+/* newsletter & social media buttons */
+.newsletter {
+  text-align: left;}
+.social { text-align: right;}
+
+input[type=text], input[type=submit] {
+    width: 15%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 
