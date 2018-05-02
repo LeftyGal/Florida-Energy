@@ -72,8 +72,11 @@
   float: left;
   padding: 10px; }
 
-.left, .right {
-  width: 15%; }
+.left {
+  width: 10%; }
+
+.right {
+  width: 20%; }
 
 .middle {
   width: 70%; }
@@ -147,21 +150,17 @@ div.scrollmenu input[type=text] {
   margin-right: 1px;
   font-size: 17px; }
 
-/* Style the container/contact section */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 10px; }
-
 /* tiles */
 .container2 {
   position: relative;
-  width: 100%; }
+  width: 50%; }
 
 .image {
   display: block;
-  width: 100%;
-  height: auto; }
+  width: 50%;
+  height: auto;
+  -ms-flex-line-pack: center;
+      align-content: center; }
 
 .overlay {
   position: absolute;
