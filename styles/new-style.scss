@@ -1,5 +1,15 @@
 $blue: #0000ff;
 $border-style :2px solid $blue;
+$primaryColor: #D7DBDD;
+
+
+
+.row {
+  background: $primaryColor;
+  .column {
+    background: $primaryColor;
+  }
+}
 
 
 /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
