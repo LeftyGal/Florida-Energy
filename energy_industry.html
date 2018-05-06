@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<title>Florida Energy Systems Consortium (F.E.S.C.)</title>
-    
-<meta charset="utf-8">
-<meta name="viewport" content="width-device-width, initial scale=1">
-<meta name="website" content="Florida Energy Systems Consortium"/>
-   
-<link href="styles/new-style.css" type="text/css" rel="stylesheet"/>
-<link href="styles/meyer-reset.css" type="text/css" rel="stylesheet">
+  <title>FESC Bootstrap</title>
   
-  <!-- google fonts -->  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="website" content="Florida Energy Systems Consortium"/>
+  
+  <link rel="stylesheet" 
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="styles/meyer-reset.css" type="text/css" rel="stylesheet">
+  <link href="/styles/new-style.scss" type="text/css" rel="stylesheet">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+  </script>
+   
+<!-- google fonts -->  
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   
  <!-- facebook tags -->
@@ -52,120 +59,150 @@
     return t;
 }(document, "script", "twitter-wjs"));</script>
   
-<script src="JS/script.js"></script>
-  
-</head>
+<script src="/JS/script.js"></script>
+ 
+<style>  
+  /* header-logo */
+.header-logo {
+  padding: 80px;
+  text-align: center;
+  background-image: url("https://raw.githubusercontent.com/LeftyGal/Florida-Energy/master/images/header_logo.png");
+  background-repeat: no-repeat;
+  color: white;
+  background-color: darkcyan;
+}
+  </style>
+    </head>
 
 <body>
   
   <div class="header-logo"></div>
   <div class="header">
-  <a href="contact.html" class="logo">Florida Energy Systems Consortium (F.E.S.C.)</a>
-  <div class="header-right">
-    <a class="active" href="/index.html">Home</a>
-    <a href="energy_industry.html">Energy Industry</a>
-    <a href="contact.html">Contact Us</a>
-    <a href="FESC">FESC Research</a>
-    <a href="Education">Education</a>
-    <a href="Outreach">Outreach</a>
-    <a href="UserFacilities">User Facilities</a>
-    <a href="AdvisoryBoard">Advisory Board</a>
-  </div>
-</div>
-
-  <span style="color: blue; font-size:40px; cursor:pointer" onclick="openNav()">&#9776; FESC </span>
+    </div>
   
-  <div class="row"> 
-    <div class="column left">
-        <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="/index.html">Home</a>
-    <a href="/energy_industry.html">Energy Industry</a>
-    <a href="/contact.html">Contact Us</a>
-    <a href="#">Fesc Research</a>
-    <a href="#">Education</a>
-    <a href="#">Outreach</a>
-    <a href="#">User Facilities</a>
-    <a href="#">Advisory Board</a>
-      </div>  
-      
-      <p>FESC has an Industrial Partnership and Innovation Strategy that assures active collaboration with the private sector and other partners that will support and guide FESC’s vision, collaborate with FESC in our research, education, innovation, and outreach programs, and provide our students with an unparalleled educational experience to prepare them as R&D and innovation leaders of tomorrow. FESC’s Industrial Partners Program designed to be an effective and efficient avenue for industry to guide FESC activities and benefit from the research, education and outreach activities of the Consortium. As such, part of FESC’s mission is to establish partnerships with companies and other organizations that will play an important role in achieving our goals and objectives. FESC promotes a meaningful exchange between the partner universities and industrial partners from small, medium, and large companies, as well as other organizations such as incubators, research parks, investors, entrepreneurs, and government laboratories.</p> 
-      
-    <br>
-      
-    <p>Please contact Canan Balaban at cbalaban@ufl.edu if you would like your company to be listed.</p>
-            </div>
+ <div class="container-fluid">
+   <nav class="navbar navbar-inverse">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="/index.html">Florida Energy Systems Consortium (F.E.S.C)</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/index.html">Home</a></li>
+        <li class="dropdown">
+          <ul class="dropdown-menu"> 
+            <a class="active" href="/index.html">Home</a> 
+          </ul>
+        </li>
+        <li><a href="/energy_industry.html">Energy Industry</a></li>
+        <li><a href="/contact.html">Contact Us</a></li>
+        <li><a href="FESC">FESC Research</a></li>
+        <li><a href="Education">Education</a></li>
+        <li><a href="Outreach">Outreach</a></li>
+        <li><a href="UserFacilities">User Facilities</a></li>
+      <li> <a href="AdvisoryBoard">Advisory Board</a></li>     
+      </ul>
+    </div>
+</nav>
 
-    <div class="column middle">
-      <div class="gallery" >
-      <figure><img src="/images/wind.jpg" alt="Wind" class="image">
-      <figcaption>WIND</figcaption></figure>
-        </div> 
+   <div clas="row">
+    <div class="col-lg">
+      <div class="text-center">
+     <h1> Energy Industry </h1>
+        </div>
+      </div>
+   </div>
       
-      <div class="gallery" >
+   <div class="row">
+        <div class="col-sm-4">
+          <div class="gallery" >
+            <figure><img src="/images/wind.jpg" alt="Wind" class="image">
+            <figcaption>WIND -- Wind power is the use of air flow through wind turbines to mechanically power generators for electricity. Wind power, as an alternative to burning fossil fuels, is plentiful, renewable, widely distributed, clean, produces no greenhouse gas emissions during operation, consumes no water, and uses little land.[2] The net effects on the environment are far less problematic than those of nonrenewable power sources.</figcaption></figure>
+            </div> 
+              </div>
+          
+        <div class="col-sm-4">
       <figure><img src="/images/Algae-300x240.jpg" alt="Algae" class="image">
-      <figcaption>ALGAE --One of the fuel sources of the future is algae, small aquatic organisms that convert sunlight into energy and store it in the form of oil. Scientists and engineers at the Energy Department and its national laboratories are researching the best strains of algae and developing the most efficient farming practices. 
+      <figcaption>ALGAE -- One of the fuel sources of the future is algae, small aquatic organisms that convert sunlight into energy and store it in the form of oil. Scientists and engineers at the Energy Department and its national laboratories are researching the best strains of algae and developing the most efficient farming practices. 
         </figcaption></figure>
-        </div> 
-      
-      <div class="gallery" >
+        </div>
+         
+          
+          
+        <div class="col-sm-4">  
       <figure><img src="/images/Solar.jpg" alt="SOLAR" class="image">
       <figcaption>SOLAR</figcaption></figure>
         </div>
-      
-      <div class="gallery" >
+   </div>
+          
+       
+   <div class="row">
+   <div class="col-sm-4">
       <figure><img src="/images/storage3.jpg" alt="STORAGE" class="image">
       <figcaption>STORAGE</figcaption></figure>
-        </div>
+          </div>
       
-      <div class="gallery" >
+     <div class="col-sm-4">
       <figure><img src="/images/efficiency.jpg" alt="EFFICIENCY" class="image">
       <figcaption>EFFICIENCY</figcaption></figure>
-        </div>
+          </div>
       
-      <div class="gallery" >
+       <div class="col-sm-4">
       <figure><img src="/images/management.jpg" alt="MANAGEMENT" class="image">
       <figcaption>MANAGEMENT</figcaption></figure>
-        </div>
-      
-
-      
-  <div class="column right">
-    <a href="https://leftygal.github.io/Florida-Energy/"><img src="images/contact_image.jpg" alt="contact"></a>
-    
-    <a href="https://leftygal.github.io/Florida-Energy/"><img src="images/wind.jpg" alt="energy_industry"></a>
+         </div>
       </div>
         </div>
+  
+  <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8">
+      <p>FESC has an Industrial Partnership and Innovation Strategy that assures active collaboration with the private sector and other partners that will support and guide FESC’s vision, collaborate with FESC in our research, education, innovation, and outreach programs, and provide our students with an unparalleled educational experience to prepare them as R&D and innovation leaders of tomorrow. FESC’s Industrial Partners Program designed to be an effective and efficient avenue for industry to guide FESC activities and benefit from the research, education and outreach activities of the Consortium. As such, part of FESC’s mission is to establish partnerships with companies and other organizations that will play an important role in achieving our goals and objectives. FESC promotes a meaningful exchange between the partner universities and industrial partners from small, medium, and large companies, as well as other organizations such as incubators, research parks, investors, entrepreneurs, and government laboratories.</p> 
+    <br> 
+    <p>Please contact Canan Balaban at cbalaban@ufl.edu if you would like your company to be listed.</p>
+            </div>
+    
+      <div class="col-sm-2"></div>
+   </div>
+         
+   <div class="footer">
+     <div class="row">
+        <div class="col-sm-2">
+          <p> Address:272 Grinter Hall</p>
+          <p>P.O. Box 115500</p>
+          <p>Gainesville, FL 32611-5500</p>
+          <p>Tel:(352)294-2027 </p>
+        </div>
      
-<div class="footer">
-  <p> Address:272 Grinter Hall</p>
-  <p>P.O. Box 115500</p>
-  <p>Gainesville, FL 32611-5500</p>
-  <p>Tel:(352)294-2027 </p>
-  
-   <div class="social">
-  <div class="fb-share-button" data-href="https://leftygal.github.io/Florida-Energy/" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fleftygal.github.io%2FFlorida-Energy%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
-  
-  <a class="twitter-share-button"
-  href="https://twitter.com/intent/tweet?text=Learn%20about%20the%20Florida%20Energy%20Systems%20Consortium ">Tweet</a>
-  </div>
-  
-   <div class="newsletter">
+    <div class="col-sm-8-news">
+      <div class="newsletter">
   <form action="/action_page.php">
-  <div class="newsletter">
-  <h2>Subscribe to our Newsletter</h2>
-    <input type="text" placeholder="Name" name="name" required>
-    <input type="text" placeholder="Email address" name="mail" required>
+  <h6>Subscribe to our Newsletter</h6>
+    <input type="text" placeholder="Name" name="name" />
+    <input type="text" placeholder="Email address" name="mail" />
     <label>
       <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
     </label>
-      </div>
-    
     <input type="submit" value="Subscribe">
     </form>
-      </div>
-        </div>
-          </div>
+     </div>
+   </div>
+       
+      <div class="col-sm-2">
+    <div class="fb-share-button" data-href="https://leftygal.github.io/Florida-Energy/" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fleftygal.github.io%2FFlorida-Energy%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+     
+    <a class="twitter-share-button"
+    href="https://twitter.com/intent/tweet?text=Learn%20about%20the%20Florida%20Energy%20Systems%20Consortium ">Tweet</a>
+      </div> 
+       
+       
+  </div>
+  </div>
+</div>
 
 
 </body>

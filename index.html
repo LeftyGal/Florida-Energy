@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<title>Florida Energy Systems Consortium (F.E.S.C.)</title>
-    
-<meta charset="utf-8">
-<meta name="viewport" content="width-device-width, initial scale=1">
-<meta name="website" content="Florida Energy Systems Consortium"/>
-   
-<link href="styles/new-style.css" type="text/css" rel="stylesheet"/>
-<link href="styles/meyer-reset.css" type="text/css" rel="stylesheet">
-
+  <title>FESC Bootstrap</title>
   
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="website" content="Florida Energy Systems Consortium"/>
+  
+  <link rel="stylesheet" 
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="styles/meyer-reset.css" type="text/css" rel="stylesheet">
+  <link href="/styles/new-style.scss" type="text/css" rel="stylesheet">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+  </script>
+   
 <!-- google fonts -->  
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   
@@ -53,54 +59,80 @@
     return t;
 }(document, "script", "twitter-wjs"));</script>
   
-<script src="JS/script.js"></script>
+<script src="/JS/script.js"></script>
+ 
+<style>  
+  /* header-logo */
+.header-logo {
+  padding: 80px;
+  text-align: center;
+  background-image: url("https://raw.githubusercontent.com/LeftyGal/Florida-Energy/master/images/header_logo.png");
+  background-repeat: no-repeat;
+  color: white;
+  background-color: darkcyan;
+}
+  </style>
   
-</head>
+    </head>
 
 <body>
   
   <div class="header-logo"></div>
   <div class="header">
-  <a href="contact.html" class="logo">Florida Energy Systems Consortium (F.E.S.C.)</a>
-  <div class="header-right">
-    <a class="active" href="/index.html">Home</a>
-    <a href="energy_industry.html">Energy Industry</a>
-    <a href="contact.html">Contact Us</a>
-    <a href="FESC">FESC Research</a>
-    <a href="Education">Education</a>
-    <a href="Outreach">Outreach</a>
-    <a href="UserFacilities">User Facilities</a>
-    <a href="AdvisoryBoard">Advisory Board</a>
+    </div>
+  
+ <div class="container-fluid">
+   <nav class="navbar navbar-inverse">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Florida Energy Systems Consortium (F.E.S.C)</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/index.html">Home</a></li>
+        <li class="dropdown">
+          <ul class="dropdown-menu"> 
+            <a class="active" href="/index.html">Home</a> 
+          </ul>
+        </li>
+        <li><a href="energy_industry.html">Energy Industry</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="FESC">FESC Research</a></li>
+        <li><a href="Education">Education</a></li>
+        <li><a href="Outreach">Outreach</a></li>
+        <li><a href="UserFacilities">User Facilities</a></li>
+      <li> <a href="AdvisoryBoard">Advisory Board</a></li>     
+      </ul>
+    </div>
+</nav>
+   
+  
+<div class="row">
+  <div class="col-lg">
+  <div class="text-center">
+     <h1>FESC Bringing Energy Solutions to Florida, the Nation and the World</h1>
+   </div>
+   </div>
   </div>
-</div>
-  
-<span style="color: blue; font-size:40px; cursor:pointer" onclick="openNav()">&#9776; FESC </span>
-  
-  <div class="row"> 
-    <div class="column left">
-        <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="/index.html">Home</a>
-    <a href="/energy_industry.html">Energy Industry</a>
-    <a href="/contact.html">Contact Us</a>
-    <a href="#">Fesc Research</a>
-    <a href="#">Education</a>
-    <a href="#">Outreach</a>
-    <a href="#">User Facilities</a>
-    <a href="#">Advisory Board</a>
-      </div>  
-    </div>
-
+     
+<div class="row">
+  <div class="col-md-8">
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/YA2ofbdd-G8"></iframe></div>
+  </div>
       
-  <div class="column middle">
-    
-    <h1>FESC Bringing Energy Solutions to Florida, the Nation and the World</h1>
+    <div class="column-sm-4"></div>
+  </div>
       
-    <div class="iframe">
-    <iframe src="https://www.youtube.com/embed/YA2ofbdd-G8"></iframe>
-    </div>
-      
-      <p>The Florida Energy Systems Consortium (FESC) was created by the Florida State government to promote collaboration among the energy experts at its 12 supported universities to share energy-related expertise. The consortium assists the state in the development and implementation of an environmentally compatible, sustainable, and efficient energy strategic plan. The Consortium was charged to ‘perform research and development on innovative energy systems that lead to alternative energy strategies, improved energy efficiencies, and expanded economic development for the state‘. The legislature appropriated funding for research at five of the universities as well as support for education, outreach, and technology commercialization. The Consortium reports to and provides guidance on an as needed basis to the Florida Legislature, Executive Office of the Governor, and the Florida’s Office of Energy housed in the Florida Department of Agriculture and Consumer Services.</p>
+  <div class="row">
+    <div class="column-sm-1"></div>
+ <div class="col-sm-10">
+   <div class="text-center">
+   <p>The Florida Energy Systems Consortium (FESC) was created by the Florida State government to promote collaboration among the energy experts at its 12 supported universities to share energy-related expertise. The consortium assists the state in the development and implementation of an environmentally compatible, sustainable, and efficient energy strategic plan. The Consortium was charged to ‘perform research and development on innovative energy systems that lead to alternative energy strategies, improved energy efficiencies, and expanded economic development for the state‘. The legislature appropriated funding for research at five of the universities as well as support for education, outreach, and technology commercialization. The Consortium reports to and provides guidance on an as needed basis to the Florida Legislature, Executive Office of the Governor, and the Florida’s Office of Energy housed in the Florida Department of Agriculture and Consumer Services.</p>
 
       <p>Overarching to the Consortium’s research strategy is an energy systems approach to identify innovation opportunities, prepare an energy workforce, and guide economic development.</p>
       <p>Through collaborative research and development across the State University System and the industry, the goal of the consortium is to become a world leader in energy research, education, technology, and energy systems analysis. In so doing, the consortium shall:</p>
@@ -110,50 +142,50 @@
         <li>(c) Provide a state resource for objective energy systems analysis.</li>
         <li>(d) Develop education and outreach programs to prepare a qualified energy workforce and informed public.</li>
         </ul>
-          </div>
-    
-    <div class="column right">
-    <a href="https://leftygal.github.io/Florida-Energy/"><img src="images/contact_image.jpg" alt="contact"></a>
-    
-    <a href="https://leftygal.github.io/Florida-Energy/"><img src="images/wind.jpg" alt="energy_industry"></a>
-      </div>
+   </div>
+    </div>
+    <div class="column-sm-1"></div>
+   </div>
+   
+  
+   <div class="footer">
+     <div class="row">
+        <div class="col-sm-2">
+          <p> Address:272 Grinter Hall</p>
+          <p>P.O. Box 115500</p>
+          <p>Gainesville, FL 32611-5500</p>
+          <p>Tel:(352)294-2027 </p>
         </div>
      
-<div class="footer">
-  <p> Address:272 Grinter Hall</p>
-  <p>P.O. Box 115500</p>
-  <p>Gainesville, FL 32611-5500</p>
-  <p>Tel:(352)294-2027 </p>
-  
-   <div class="social">
-  <div class="fb-share-button" data-href="https://leftygal.github.io/Florida-Energy/" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fleftygal.github.io%2FFlorida-Energy%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
-  
-  <a class="twitter-share-button"
-  href="https://twitter.com/intent/tweet?text=Learn%20about%20the%20Florida%20Energy%20Systems%20Consortium ">Tweet</a>
-  </div>
-  
-   <div class="newsletter">
+    <div class="col-sm-8-news">
+      <div class="newsletter">
   <form action="/action_page.php">
-  <div class="newsletter">
-  <h2>Subscribe to our Newsletter</h2>
-    <input type="text" placeholder="Name" name="name" required>
-    <input type="text" placeholder="Email address" name="mail" required>
+  <h6>Subscribe to our Newsletter</h6>
+    <input type="text" placeholder="Name" name="name" />
+    <input type="text" placeholder="Email address" name="mail" />
     <label>
       <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
     </label>
-      </div>
-    
     <input type="submit" value="Subscribe">
     </form>
-      </div>
-
-    </div>
-
-</body>
-</html>
-
-
-
-
-
-
+     </div>
+   </div>
+       
+      <div class="col-sm-2">
+    <div class="fb-share-button" data-href="https://leftygal.github.io/Florida-Energy/" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fleftygal.github.io%2FFlorida-Energy%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+     
+    <a class="twitter-share-button"
+    href="https://twitter.com/intent/tweet?text=Learn%20about%20the%20Florida%20Energy%20Systems%20Consortium ">Tweet</a>
+      </div> 
+       
+       
+  </div>
+  </div>
+</div>
+    
+  </body>
+    </html> 
+  
+  
+  
+  
