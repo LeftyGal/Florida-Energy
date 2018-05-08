@@ -80,6 +80,10 @@ $primaryColor: #D7DBDD;
   }
 }
 
+h6 .footer .newletter {
+  font-weight: bold;
+}
+
 
 /* scroll menu */
 
@@ -125,11 +129,8 @@ div.scrollmenu input[type=text] {
 .newsletter {
   text-align: left;
 .social { 
-  text-align: right;
+  text-align: right;}
 }
-}
-
-
 
 input[type=text], select, textarea {
     width: 100%;
@@ -191,12 +192,6 @@ input[type=submit]:hover {
     }
 }
 
-.row {
-  background: $primaryColor;
-  .column {
-    background: $primaryColor;
-  }
-}
 
 .gallery {
   width: 220px;
@@ -241,7 +236,6 @@ input[type=submit]:hover {
 }
 
 .video {
-  align: center;
   border: $border-style;
   display: flex;
   width: 300px;

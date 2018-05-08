@@ -62,6 +62,9 @@
 
   .header-right {
     float: none; } }
+h6 .footer .newletter {
+  font-weight: bold; }
+
 /* scroll menu */
 div.scrollmenu {
   background-color: darkgray;
@@ -149,11 +152,6 @@ input[type=submit]:hover {
   .col-25, .col-75, input[type=submit] {
     width: 100%;
     margin-top: 0; } }
-.row {
-  background: #D7DBDD; }
-  .row .column {
-    background: #D7DBDD; }
-
 .gallery {
   width: 220px;
   float: left;
@@ -190,7 +188,6 @@ input[type=submit]:hover {
   height: 450px; }
 
 .video {
-  align: center;
   border: 2px solid #0000ff;
   display: -webkit-box;
   display: -ms-flexbox;
