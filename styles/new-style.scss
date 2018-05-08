@@ -113,7 +113,7 @@ div.scrollmenu input[type=text] {
 
 
 /* footer */
-.footer { 
+.footer .row { 
   text-align: center;
   background: darkcyan;
   width: 100%;
@@ -227,7 +227,7 @@ input[type=submit]:hover {
   text-align: center;
 }
 
-.col-sm-4-news h2 {
+.col-sm-4 h2 {
   text-align: right;
 }
 
@@ -243,18 +243,15 @@ input[type=submit]:hover {
 .video {
   align: center;
   border: $border-style;
-  display: block;
+  display: flex;
   width: 300px;
   height: 100px;
   margin: auto;
   &:span {
-    font: $blue; 
+    font: $blue;
+    
 }
 }
-
-
-
-
 
 input[type=text], select, textarea {
     width: 100%;
