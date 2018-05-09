@@ -8,7 +8,7 @@ $primaryColor: #D7DBDD;
 
 .row {
   background: $primaryColor;
-  .column {
+  .column .row {
     background: $primaryColor;
   }
 }
@@ -116,8 +116,6 @@ div.scrollmenu input[type=text] {
     font-size: 17px;
 }
 
-
-
 /* footer */
 .footer .row { 
   text-align: center;
@@ -131,6 +129,7 @@ div.scrollmenu input[type=text] {
 .newsletter {
   text-align: left;
   padding-left: 15rem;
+  font-weight: bold;
 .social { 
   text-align: right;}
 }
@@ -195,7 +194,7 @@ input[type=submit]:hover {
     }
 }
 
-.containter-fluid {
+containter-fluid {
   background: $primaryColor;
   .header {
     background: $primaryColor;
@@ -296,7 +295,7 @@ input[type=submit]:hover {
     &:figcaption {
       padding: 20px;
     }
-  }  
+  }   
 
 
 

@@ -4,7 +4,7 @@
 
 .row {
   background: #D7DBDD; }
-  .row .column {
+  .row .column .row {
     background: #D7DBDD; }
 
 .body {
@@ -100,7 +100,8 @@ div.scrollmenu input[type=text] {
 /* newsletter & social media buttons */
 .newsletter {
   text-align: left;
-  padding-left: 15rem; }
+  padding-left: 15rem;
+  font-weight: bold; }
   .newsletter .social {
     text-align: right; }
 
@@ -153,11 +154,11 @@ input[type=submit]:hover {
   .col-25, .col-75, input[type=submit] {
     width: 100%;
     margin-top: 0; } }
-.containter-fluid {
+containter-fluid {
   background: #D7DBDD; }
-  .containter-fluid .header {
+  containter-fluid .header {
     background: #D7DBDD; }
-    .containter-fluid .header .nav.navbar.navbar-inverse {
+    containter-fluid .header .nav.navbar.navbar-inverse {
       background-color: #D7DBDD; }
 
 .gallery {
