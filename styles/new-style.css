@@ -93,13 +93,14 @@ div.scrollmenu input[type=text] {
 .footer .row {
   text-align: center;
   background: darkcyan;
-  width: 100%;
-  padding: 5px;
-  padding-bottom: 2px; }
+  width: 110%;
+  padding-bottom: 2px;
+  font-weight: bold; }
 
 /* newsletter & social media buttons */
 .newsletter {
-  text-align: left; }
+  text-align: left;
+  padding-left: 15rem; }
   .newsletter .social {
     text-align: right; }
 
@@ -152,6 +153,13 @@ input[type=submit]:hover {
   .col-25, .col-75, input[type=submit] {
     width: 100%;
     margin-top: 0; } }
+.containter-fluid {
+  background: #D7DBDD; }
+  .containter-fluid .header {
+    background: #D7DBDD; }
+    .containter-fluid .header .nav.navbar.navbar-inverse {
+      background-color: #D7DBDD; }
+
 .gallery {
   width: 220px;
   float: left;
@@ -172,6 +180,9 @@ input[type=submit]:hover {
     float: left; }
   .figure:figcaption {
     padding: 20px; }
+
+.col-lg {
+  background: #D7DBDD; }
 
 .col-md-8 {
   text-align: center; }
@@ -220,5 +231,12 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #45a049; }
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto; }
+  .image:figcaption {
+    padding: 20px; }
 
 /*# sourceMappingURL=new-style.css.map */

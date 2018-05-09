@@ -23,6 +23,8 @@ $primaryColor: #D7DBDD;
     font-size: 16em; }
 }
 
+
+
 /* header-logo */
 .header-logo {
   padding: 80px;
@@ -120,14 +122,15 @@ div.scrollmenu input[type=text] {
 .footer .row { 
   text-align: center;
   background: darkcyan;
-  width: 100%;
-  padding: 5px;
+  width: 110%;
   padding-bottom: 2px;
+  font-weight: bold;
 }
 
 /* newsletter & social media buttons */
 .newsletter {
   text-align: left;
+  padding-left: 15rem;
 .social { 
   text-align: right;}
 }
@@ -192,6 +195,15 @@ input[type=submit]:hover {
     }
 }
 
+.containter-fluid {
+  background: $primaryColor;
+  .header {
+    background: $primaryColor;
+    .nav.navbar.navbar-inverse {
+      background-color: $primaryColor;
+    }
+  }
+}
 
 .gallery {
   width: 220px;
@@ -216,7 +228,11 @@ input[type=submit]:hover {
     &:figcaption {
       padding: 20px;
     }
-  }  
+  } 
+
+.col-lg {
+  background: $primaryColor;
+}
 
 .col-md-8 {
   text-align: center;
@@ -243,7 +259,6 @@ input[type=submit]:hover {
   margin: auto;
   &:span {
     font: $blue;
-    
 }
 }
 
@@ -273,6 +288,18 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #45a049;
 }
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+    &:figcaption {
+      padding: 20px;
+    }
+  }  
+
+
+
 
 
 
