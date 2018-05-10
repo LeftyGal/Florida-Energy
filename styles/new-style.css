@@ -171,26 +171,21 @@ input[type=submit]:hover {
     .container-fluid .header .navbar navbar-inverse .navbar-header {
       background-color: #D7DBDD; }
 
-.gallery {
-  width: 220px;
-  float: left;
-  margin: 10px;
-  height: 198px; }
-
 .figure {
   display: block;
   width: 202px;
-  background-color: lightgray;
+  background-color: white;
   margin: 0px;
   padding: 9px;
   text-align: center; }
-  .figure img {
-    width: 300px;
+  .figure .img {
+    width: 200px;
     height: 200px;
-    border: 2px solid blue;
+    border: 5px solid white;
     float: left; }
   .figure:figcaption {
-    padding: 20px; }
+    padding: 20px;
+    border-bottom-color: white; }
 
 .col-lg {
   background: #D7DBDD; }
@@ -218,7 +213,8 @@ input[type=submit]:hover {
   height: 100px;
   margin: auto; }
   .video:span {
-    font: #0000ff; }
+    font: #0000ff;
+    border: 5px; }
 
 .image {
   display: block;
@@ -227,7 +223,9 @@ input[type=submit]:hover {
   .image:figcaption {
     padding: 20px; }
 
-.figcaption .row {
-  background-color: floralwhite; }
+.gallery {
+  border: solid 5px white;
+  padding: 10px;
+  border-radius: 10px solid white; }
 
 /*# sourceMappingURL=new-style.css.map */

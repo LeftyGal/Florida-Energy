@@ -216,28 +216,29 @@ input[type=submit]:hover {
   }
 }
 
-.gallery {
-  width: 220px;
-  float: left;
-  margin: 10px;
-  height: 198px;  
-}
+//.gallery {
+  //width: 200px;
+  //float: left;
+  //margin: 10px;
+  //height: 198px;  
+//}
 
 .figure {
   display: block;
   width: 202px;
-  background-color: lightgray;
+  background-color: white;
   margin: 0px;
   padding: 9px;
   text-align: center;
-  img {
-    width: 300px;
+  .img {
+    width: 200px;
     height: 200px;
-    border: 2px solid blue;
+    border: 5px solid white;
     float: left;
   }
     &:figcaption {
       padding: 20px;
+      border-bottom-color: white;
     }
   } 
 
@@ -270,6 +271,7 @@ input[type=submit]:hover {
   margin: auto;
   &:span {
     font: $blue;
+    border: 5px;
 }
 }
 
@@ -282,8 +284,11 @@ input[type=submit]:hover {
     }
   } 
 
-.figcaption .row {
-  background-color: floralwhite; 
+
+.gallery {
+  border: solid 5px white;
+  padding: 10px;
+  border-radius: 10px solid white;
 }
 
 
