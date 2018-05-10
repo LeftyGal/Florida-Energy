@@ -277,13 +277,14 @@ input[type=submit]:hover {
 
 .image {
   display: block;
-  width: 100%;
+  width: 85%;
   height: auto;
+  align-items: center;
+  align-content: center;
     &:figcaption {
       padding: 20px;
     }
   } 
-
 
 .gallery {
   border: solid 5px white;
@@ -291,6 +292,9 @@ input[type=submit]:hover {
   border-radius: 10px solid white;
 }
 
+figcaption{
+  border: solid 3px white;
+}
 
 
 
