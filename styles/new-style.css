@@ -234,6 +234,11 @@ input[type=submit]:hover {
   border-radius: 10px solid white; }
 
 figcaption {
-  border: solid 3px white; }
+  border: solid 3px white;
+  font-weight: bold; }
+
+.para {
+  background-color: white;
+  font-weight: bold; }
 
 /*# sourceMappingURL=new-style.css.map */
