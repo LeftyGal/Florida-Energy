@@ -17,13 +17,11 @@ $primaryColor: #D7DBDD;
   font-family: 'Montserrat', sans-serif;
   font-size: 16em;
   $primaryColor: #D7DBDD;
-  background: $primaryColor;
+  background-color: $primaryColor;
   .p{
     font-family: 'Montserrat', sans-serif;
     font-size: 16em; }
 }
-
-
 
 /* header-logo */
 .header-logo {
@@ -37,8 +35,8 @@ $primaryColor: #D7DBDD;
 
 .header {
   overflow: hidden;
-  background-color: #f1f1f1;
-  padding: 20px 10px;
+  background-color: #D7DBDD;
+  padding: 0px 0px;
 }
 
 .header a {
@@ -58,12 +56,12 @@ $primaryColor: #D7DBDD;
 }
 
 .header a:hover {
-  background-color: #ddd;
+  background-color: #D7DBDD;
   color: black;
 }
 
 .header a.active {
-  background-color: dodgerblue;
+  background-color: #D7DBDD ;
   color: white;
 }
 
@@ -85,7 +83,6 @@ $primaryColor: #D7DBDD;
 h6 .footer .newletter {
   font-weight: bold;
 }
-
 
 /* scroll menu */
 
@@ -115,6 +112,16 @@ div.scrollmenu input[type=text] {
     margin-right: 1px;
     font-size: 17px;
 }
+
+/* footer */
+//.footer .row { 
+  //text-align: center;
+//  background: darkcyan;
+//  width: 110%;
+//  padding-top: 20px;
+//  padding-bottom: 20px;
+//  font-weight: bold;//
+//}
 
 /* footer */
 .footer .row { 
@@ -162,20 +169,24 @@ input[type=submit]:hover {
 }
 
 .container {
-    border-radius: 5px;
+    border-radius: 25px;
     background-color: #f2f2f2;
-    padding: 20px;
+    align-content: right;
+    padding-left: 100px;
+    align-items: center;
+    align-self: center;
+    margin-left: 100px;
 }
 
 .col-25 {
     float: left;
-    width: 25%;
+    width: 15%;
     margin-top: 6px;
 }
 
 .col-75 {
     float: left;
-    width: 75%;
+    width: 15%;
     margin-top: 6px;
 }
 
@@ -194,11 +205,11 @@ input[type=submit]:hover {
     }
 }
 
-containter-fluid {
+.container-fluid {
   background: $primaryColor;
   .header {
     background: $primaryColor;
-    .nav.navbar.navbar-inverse {
+    .navbar navbar-inverse .navbar-header  {
       background-color: $primaryColor;
     }
   }
@@ -208,7 +219,7 @@ containter-fluid {
   width: 220px;
   float: left;
   margin: 10px;
-  height: 198px;
+  height: 198px;  
 }
 
 .figure {
@@ -261,33 +272,6 @@ containter-fluid {
 }
 }
 
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-}
-
-label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-}
-
-input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-}
-
-input[type=submit]:hover {
-    background-color: #45a049;
-}
-
 .image {
   display: block;
   width: 100%;
@@ -295,8 +279,11 @@ input[type=submit]:hover {
     &:figcaption {
       padding: 20px;
     }
-  }   
+  } 
 
+.figcaption .row {
+  background-color: floralwhite; 
+}
 
 
 
