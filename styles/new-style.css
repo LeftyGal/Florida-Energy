@@ -209,12 +209,12 @@ input[type=submit]:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 300px;
-  height: 100px;
-  margin: auto; }
+  width: 25px;
+  height: 200%;
+  margin: auto;
+  border-style: solid 25px blue; }
   .video:span {
-    font: #0000ff;
-    border: 5px; }
+    font: #0000ff; }
 
 .image {
   display: block;
@@ -241,7 +241,19 @@ figcaption {
   background-color: white;
   font-weight: bold; }
 
+.text-center2 {
+  padding-left: 300px;
+  padding-right: 100px;
+  padding-top: 75px;
+  border-radius: 5px;
+  border: solid white;
+  border-radius: 20px;
+  padding-bottom: 50px;
+  border-spacing: inherit; }
+
 .text-center {
-  padding-left: 100px; }
+  padding-left: 200px;
+  padding-right: 100px;
+  padding-top: 100px; }
 
 /*# sourceMappingURL=new-style.css.map */

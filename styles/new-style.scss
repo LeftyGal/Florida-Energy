@@ -266,12 +266,12 @@ input[type=submit]:hover {
 .video {
   border: $border-style;
   display: flex;
-  width: 300px;
-  height: 100px;
+  width: 25px;
+  height: 200%;
   margin: auto;
+  border-style: solid 25px blue;
   &:span {
-    font: $blue;
-    border: 5px;
+    font: $blue;    
 }
 }
 
@@ -302,7 +302,22 @@ figcaption{
   font-weight: bold;
 }
 
-.text-center{
-  padding-left: 100px;
+.text-center2{
+  padding-left: 300px;
+  padding-right: 100px;
+  padding-top: 75px;
+  border-radius: 5px;
+  border: solid white;
+  border-radius: 20px;
+  padding-bottom: 50px;
+  border-spacing: inherit;
 }
+
+.text-center{
+  padding-left: 200px;
+  padding-right: 100px;
+  padding-top: 100px;
+  
+}
+  
 
