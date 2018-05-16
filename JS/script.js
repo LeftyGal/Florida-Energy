@@ -1,7 +1,7 @@
 
 
-function myMap() {
-var mapProp={
+function myMap(){
+var mapProp= {
     center:new google.maps.LatLng(29.65, -82.32),
     zoom:10,
 };

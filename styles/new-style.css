@@ -205,16 +205,13 @@ input[type=submit]:hover {
   height: 450px; }
 
 .video {
-  border: 2px solid #0000ff;
+  border: 5px solid #0000ff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 25px;
-  height: 200%;
-  margin: auto;
-  border-style: solid 25px blue; }
-  .video:span {
-    font: #0000ff; }
+  width: 50px;
+  height: 100%;
+  margin: auto; }
 
 .image {
   display: block;
@@ -242,13 +239,14 @@ figcaption {
   font-weight: bold; }
 
 .text-center2 {
-  padding-left: 300px;
-  padding-right: 100px;
-  padding-top: 75px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 200px;
+  padding-top: 0px;
   border-radius: 5px;
   border: solid white;
   border-radius: 20px;
-  padding-bottom: 50px;
+  padding-bottom: 5px;
   border-spacing: inherit; }
 
 .text-center {

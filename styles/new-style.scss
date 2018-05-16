@@ -1,5 +1,5 @@
 $blue: #0000ff;
-$border-style :2px solid $blue;
+$border-style :5px solid $blue;
 $primaryColor: #D7DBDD;
 
 * {
@@ -266,13 +266,9 @@ input[type=submit]:hover {
 .video {
   border: $border-style;
   display: flex;
-  width: 25px;
-  height: 200%;
+  width: 50px;
+  height: 100%;
   margin: auto;
-  border-style: solid 25px blue;
-  &:span {
-    font: $blue;    
-}
 }
 
 .image {
@@ -303,13 +299,14 @@ figcaption{
 }
 
 .text-center2{
-  padding-left: 300px;
-  padding-right: 100px;
-  padding-top: 75px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 200px;
+  padding-top: 0px;
   border-radius: 5px;
   border: solid white;
   border-radius: 20px;
-  padding-bottom: 50px;
+  padding-bottom: 5px;
   border-spacing: inherit;
 }
 
