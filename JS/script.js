@@ -1,9 +1,10 @@
 
 
-function myMap(){
+
+function myMap() {
 var mapProp= {
     center:new google.maps.LatLng(29.65, -82.32),
-    zoom:10,
+    zoom:5,
 };
 var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 }
