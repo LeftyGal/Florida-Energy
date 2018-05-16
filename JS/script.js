@@ -1,15 +1,14 @@
 
 
 function myMap() {
-var mapProp= {
-    center:new google.maps.LatLng(51.508742,-0.120850),
-    zoom:5,
-};
-var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+  var mapCanvas = document.getElementById("googleMap");
+  var mapOptions = {
+    center: new google.maps.LatLng(29.65, -82.32), zoom: 10
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
 }
 
 
-  
 
 (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
