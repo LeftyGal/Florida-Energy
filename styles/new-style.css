@@ -297,5 +297,12 @@ figcaption {
 
   .sidenav a {
     font-size: 18px; } }
+.curve_chart {
+  width: 900px;
+  height: 500px; }
+
+.chart_div {
+  width: 900px;
+  height: 500px; }
 
 /*# sourceMappingURL=new-style.css.map */

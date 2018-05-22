@@ -66,9 +66,37 @@ function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
 }
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawVisualization);
+
+      function drawVisualization() {
+        // Some raw data (not necessarily accurate)
+        var data = google.visualization.arrayToDataTable([
+         ['Year', 'Billion BTU'],
+         ['1960',  57344],
+         ['1961',  62705],
+         ['1962',  71216],
+         ['1963',  78258],
+         ['1964',  87016],
+         ['1965', 95878],
+          
+      ]);
+
+    var options = {
+      title : 'Electricty Total Consumption in the state of Florida',
+      vAxis: {title: 'Billion BTU'},
+      hAxis: {title: 'Year'},
+      seriesType: 'bars',
+      series: {5: {type: 'line'}}
+    };
+
+    var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+    chart.draw(data, options);
+  }
+
+
+
+
        
   
      
