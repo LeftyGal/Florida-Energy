@@ -134,6 +134,9 @@ google.charts.load('current', {'packages':['corechart']});
         ]);
 
         var options = {
+          backgroundColor: '#a0d6b4',
+          bold: 'true',
+          italic: 'true',
           title: 'Renewable energy production Florida',
           curveType: 'function',
           legend: { position: 'bottom' }
@@ -213,6 +216,9 @@ google.charts.load('current', {'packages':['corechart']});
       ]);
 
     var options = {
+      backgroundColor: '#ffd3b6',
+      bold: 'true',
+      italic: 'true',
       title : 'Electricity Total Consumption in the state of Florida',
       vAxis: {title: 'Billion Btu'},
       hAxis: {title: 'Year'},
@@ -222,10 +228,7 @@ google.charts.load('current', {'packages':['corechart']});
 
     var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
     chart.draw(data, options);
-        
-        
-        
-        
+            
   }
 
 
