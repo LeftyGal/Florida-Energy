@@ -8,8 +8,9 @@ var graphs = [
 var app = new Vue({
   el: '#app',
   data: {
-    graphs: datagraphs
-  },
+    graphs: 'datagraphs'
+  }
+})
   methods: {
     test: function(){
       console.log("test was called")

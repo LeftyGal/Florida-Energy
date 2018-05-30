@@ -66,8 +66,6 @@
   
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   
-<script src="JS/script.js"></script>
- 
 <style>  
   /* header-logo */
 .header-logo {
@@ -85,7 +83,7 @@
 <body>
   
   <div class="header-logo"></div>
-  <div class="header">
+  <div class="header" {{ datagraphs }} >
     </div>
   
 <div id="mySidenav" class="sidenav">
@@ -131,20 +129,18 @@
    
    <div id="app">
  {{ data graphs }}
-   </div>
-   
    
  <div class="filters">
     <label>
-      <input type="checkbox" name="Renewable Energy (FL)">
+      <input type="checkbox" name="renewable">
       Only show renewable energy production table
     </label>
   </div>
    
  <div class="filters">
     <label>
-      <input type="checkbox" name="Total Electricity Consumption (FL)">
-      Only show total electrcity consumption table
+      <input type="checkbox" name="totalenergy">
+      Only show total electricity consumption table
     </label>
   </div>  
    
@@ -221,7 +217,10 @@
   </div>
   </div>
   </div>
+   
+  </div>
   
+  <script src="JS/script.js"></script>
   <script src="JS/vue.js"></script>
 
   </body>
