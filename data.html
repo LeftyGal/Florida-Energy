@@ -64,7 +64,7 @@
   
 
   
-
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   
 <script src="JS/script.js"></script>
  
@@ -129,7 +129,25 @@
     </div>
 </nav>
    
-
+   <div id="app">
+ {{ data graphs }}
+   </div>
+   
+   
+ <div class="filters">
+    <label>
+      <input type="checkbox" name="Renewable Energy (FL)">
+      Only show renewable energy production table
+    </label>
+  </div>
+   
+ <div class="filters">
+    <label>
+      <input type="checkbox" name="Total Electricity Consumption (FL)">
+      Only show total electrcity consumption table
+    </label>
+  </div>  
+   
 <div class="row">
   <div class="col-lg">
   <div class="text-center1">
@@ -153,6 +171,9 @@
 
      
      <div id="curve_chart" style="width: 875px; height: 400px"></div>
+     
+     <br>
+     <br>
      
      <div id="chart_div" style="width: 875px; height: 400px;"></div>
      
@@ -200,6 +221,8 @@
   </div>
   </div>
   </div>
+  
+  <script src="JS/vue.js"></script>
 
   </body>
     </html> 
