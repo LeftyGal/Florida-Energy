@@ -63,8 +63,8 @@
 }(document, "script", "twitter-wjs"));</script>
   
 
-  
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="JS/component.js"></script>
   
 <style>  
   /* header-logo */
@@ -82,8 +82,9 @@
 
 <body>
   
-  <div class="header-logo"></div>
-  <div class="header" {{ message }}>
+  <div class="header-logo">
+    </div>
+  <div class="header">
     </div>
   
 <div id="mySidenav" class="sidenav">
@@ -130,19 +131,21 @@
    <div id="app">
  {{ data graphs }}
    
- <div class="filters">
+ 
     <label>
-      <input type="checkbox" name="renewable">
+      <input v-on:change="filter()" type="checkbox" name="renewable">
       Only show renewable energy production table
     </label>
-  </div>
+     <button v-on:click="test()">CLICK HERE</button>
+ 
    
- <div class="filters">
+ 
     <label>
-      <input type="checkbox" name="totalenergy">
+      <input v-on:change="filter()" type="checkbox" name="totalenergy">
       Only show total electricity consumption table
+       <button v-on:click="test()">CLICK HERE</button>
     </label>
-  </div>  
+   
    
 <div class="row">
   <div class="col-lg">
@@ -222,7 +225,8 @@
   
   <script src="JS/script.js"></script>
   <script src="JS/vue.js"></script>
-
+ 
+  
   </body>
     </html> 
     

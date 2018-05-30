@@ -1,5 +1,5 @@
 
-Vue.component('app-header', {
+Vue.component('app', {
  props: ['text'],
- template: '<header><h1><img src="header_logo.png" alt="FESC Logo">{{ text }}</h1></header>'
+ template: ''
 })
