@@ -233,6 +233,28 @@ google.charts.load('current', {'packages':['corechart']});
 
 
 
+var app = new Vue({
+  el: '#app',
+  data: {
+  
+  },
+  methods: {
+    showrenewableproduction: function(){
+      console.log("test1 was called")
+      document.getElementById("chart_div").innerHTML=""
+      drawChart()
+    },
+    showtotalconsumption: function(){
+    console.log("test2 was called")
+      document.getElementById("curve_chart").innerHTML=""
+    drawVisualization()
+  },
+}
+})
+
+
+
+
 
        
   
