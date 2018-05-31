@@ -129,24 +129,11 @@
 </nav>
    
    <div id="app">
- {{ data graphs }}
-   
  
-    <label>
-      <input v-on:change="filter()" type="checkbox" id="renewable">
-      Only show renewable energy production table
-    </label>
-     <button v-on:click="test()">CLICK HERE</button>
+     <button v-on:click="showrenewableproduction()">Renewable Production</button>
  
-   
- 
-    <label>
-      <input v-on:change="filter()" type="checkbox" id="totalenergy">
-      Only show total electricity consumption table
-       <button v-on:click="test()">CLICK HERE</button>
-    </label>
-   
-   
+     <button v-on:click="showtotalconsumption()">Total Electricity Consumption</button>
+    
 <div class="row">
   <div class="col-lg">
   <div class="text-center1">
