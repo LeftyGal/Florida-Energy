@@ -90,7 +90,6 @@ div.scrollmenu input[type=text] {
   font-size: 17px; }
 
 /* footer */
-/* footer */
 .footer .row {
   text-align: center;
   background: darkcyan;
@@ -297,16 +296,22 @@ figcaption {
 
   .sidenav a {
     font-size: 18px; } }
+/* charts */
 .curve_chart {
-  width: 875px;
-  height: 400px;
+  width: 100%;
+  min-height: 400px;
   -ms-flex-line-pack: center;
       align-content: center; }
 
 .chart_div {
-  width: 875px;
-  height: 400px;
+  width: 100%;
+  min-height: 400px;
   -ms-flex-line-pack: center;
       align-content: center; }
+
+@media screen and (max-width: 1080px) {
+  .curve_chart .chart_div {
+    zoom: 0.6;
+    margin-left: -16%; } }
 
 /*# sourceMappingURL=new-style.css.map */

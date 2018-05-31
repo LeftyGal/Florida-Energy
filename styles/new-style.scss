@@ -114,16 +114,6 @@ div.scrollmenu input[type=text] {
 }
 
 /* footer */
-//.footer .row { 
-  //text-align: center;
-//  background: darkcyan;
-//  width: 110%;
-//  padding-top: 20px;
-//  padding-bottom: 20px;
-//  font-weight: bold;//
-//}
-
-/* footer */
 .footer .row { 
   text-align: center;
   background: darkcyan;
@@ -363,14 +353,23 @@ figcaption{
   .sidenav a {font-size: 18px;}
 }
 
+/* charts */
+
 .curve_chart {
-  width: 875px; 
-  height: 400px;
+  width: 100%; 
+  min-height: 400px;
   align-content: center;
 }
 
 .chart_div{
-  width: 875px;
-  height: 400px;
+  width: 100%;
+  min-height: 400px;
   align-content: center;
+}
+
+@media screen and (max-width: 1080px) {
+    .curve_chart .chart_div {
+        zoom:0.6;
+        margin-left:-16%;
+    }
 }
