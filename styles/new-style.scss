@@ -3,7 +3,7 @@ $border-style :5px solid $blue;
 $primaryColor: #D7DBDD;
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .row {
@@ -13,17 +13,19 @@ $primaryColor: #D7DBDD;
   }
 }
 
-.body{
+.body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16em;
   $primaryColor: #D7DBDD;
   background-color: $primaryColor;
-  .p{
+  .p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 16em; }
+    font-size: 16em;
+  }
 }
 
 /* header-logo */
+
 .header-logo {
   padding: 80px;
   text-align: center;
@@ -45,7 +47,7 @@ $primaryColor: #D7DBDD;
   text-align: center;
   padding: 12px;
   text-decoration: none;
-  font-size: 18px; 
+  font-size: 18px;
   line-height: 25px;
   border-radius: 4px;
 }
@@ -61,7 +63,7 @@ $primaryColor: #D7DBDD;
 }
 
 .header a.active {
-  background-color: #D7DBDD ;
+  background-color: #D7DBDD;
   color: white;
 }
 
@@ -89,7 +91,7 @@ h6 .footer .newletter {
 div.scrollmenu {
   background-color: darkgray;
   overflow: auto;
-  white-space: nowrap; 
+  white-space: nowrap;
 }
 
 div.scrollmenu a {
@@ -105,16 +107,17 @@ div.scrollmenu a:hover {
 }
 
 div.scrollmenu input[type=text] {
-    float: right;
-    padding: 8px;
-    border: none;
-    margin-top: 10px;
-    margin-right: 1px;
-    font-size: 17px;
+  float: right;
+  padding: 8px;
+  border: none;
+  margin-top: 10px;
+  margin-right: 1px;
+  font-size: 17px;
 }
 
 /* footer */
-.footer .row { 
+
+.footer .row {
   text-align: center;
   background: darkcyan;
   width: 110%;
@@ -123,96 +126,103 @@ div.scrollmenu input[type=text] {
 }
 
 /* newsletter & social media buttons */
+
 .newsletter {
   text-align: left;
   padding-left: 15rem;
   font-weight: bold;
-.social { 
-  text-align: right;}
+  .social {
+    text-align: right;
+  }
 }
 
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
 }
 
 label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
+  padding: 12px 12px 12px 0;
+  display: inline-block;
 }
 
 input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+  background-color: #45a049;
 }
 
 .container {
-    border-radius: 25px;
-    background-color: #f2f2f2;
-    align-content: right;
-    padding-left: 100px;
-    align-items: center;
-    align-self: center;
-    margin-left: 100px;
-    border: solid 5px white;
+  border-radius: 25px;
+  background-color: #f2f2f2;
+  align-content: right;
+  padding-left: 100px;
+  align-items: center;
+  align-self: center;
+  margin-left: 100px;
+  border: solid 5px white;
 }
 
 .col-25 {
-    float: left;
-    width: 15%;
-    margin-top: 6px;
+  float: left;
+  width: 15%;
+  margin-top: 6px;
 }
 
 .col-75 {
-    float: left;
-    width: 15%;
-    margin-top: 6px;
+  float: left;
+  width: 15%;
+  margin-top: 6px;
 }
 
 /* Clear floats after the columns */
+
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
 @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
-        width: 100%;
-        margin-top: 0;
-    }
+  .col-25,
+  .col-75,
+  input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 }
 
 .container-fluid {
   background: $primaryColor;
   .header {
     background: $primaryColor;
-    .navbar navbar-inverse .navbar-header  {
+    .navbar navbar-inverse .navbar-header {
       background-color: $primaryColor;
     }
   }
 }
 
 //.gallery {
-  //width: 200px;
-  //float: left;
-  //margin: 10px;
-  //height: 198px;  
+//width: 200px;
+//float: left;
+//margin: 10px;
+//height: 198px;  
 //}
-
 .figure {
   display: block;
   width: 202px;
@@ -226,11 +236,11 @@ input[type=submit]:hover {
     border: 5px solid white;
     float: left;
   }
-    &:figcaption {
-      padding: 20px;
-      border-bottom-color: white;
-    }
-  } 
+  &:figcaption {
+    padding: 20px;
+    border-bottom-color: white;
+  }
+}
 
 .col-lg {
   background: $primaryColor;
@@ -249,8 +259,8 @@ input[type=submit]:hover {
   text-align: center;
 }
 
- .row.content {
-   height: 450px;
+.row.content {
+  height: 450px;
 }
 
 .video {
@@ -260,7 +270,7 @@ input[type=submit]:hover {
   height: 170px;
   margin: auto;
   background-color: blue;
-  iframe{
+  iframe {
     margin: auto;
   }
 }
@@ -271,10 +281,10 @@ input[type=submit]:hover {
   height: auto;
   align-items: center;
   align-content: center;
-    &:figcaption {
-      padding: 20px;
-    }
-  } 
+  &:figcaption {
+    padding: 20px;
+  }
+}
 
 .gallery {
   border: solid 5px white;
@@ -282,17 +292,17 @@ input[type=submit]:hover {
   border-radius: 10px solid white;
 }
 
-figcaption{
+figcaption {
   border: solid 3px white;
   font-weight: bold;
 }
 
-.para{
+.para {
   background-color: white;
   font-weight: bold;
 }
 
-.text-center2{
+.text-center2 {
   padding-left: 10px;
   padding-right: 10px;
   margin-left: 200px;
@@ -304,72 +314,76 @@ figcaption{
   border-spacing: inherit;
 }
 
-.text-center{
+.text-center {
   padding-left: 200px;
   padding-right: 100px;
   padding-top: 100px;
-  
+
 }
-  
+
 /* side nav */
 
 .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
+  color: #f1f1f1;
 }
 
 .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-    background-color: darkgray;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  background-color: darkgray;
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }
 
 /* charts */
 
 .curve_chart {
-  width: 100%; 
+  width: 100%;
   min-height: 400px;
   align-content: center;
 }
 
-.chart_div{
+.chart_div {
   width: 100%;
   min-height: 400px;
   align-content: center;
 }
 
 @media screen and (max-width: 1080px) {
-    .curve_chart .chart_div {
-        zoom:0.6;
-        margin-left:-16%;
-    }
+  .curve_chart .chart_div {
+    zoom: 0.6;
+    margin-left: -16%;
+  }
 }
