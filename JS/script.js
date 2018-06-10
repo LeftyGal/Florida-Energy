@@ -245,7 +245,7 @@ var app = new Vue({
     showtotalconsumption: function(){
     console.log("test2 was called")
       document.getElementById("curve_chart").innerHTML=""
-    drawVisualization.()
+    drawVisualization()
   },
 }
 })
