@@ -1,4 +1,3 @@
-
 function myMap() {
   var mapCanvas = document.getElementById("map");
   var mapOptions = {
@@ -67,86 +66,77 @@ function openNav() {
 }
 
 
+///* chart from API *///
+
+
 google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
+      google.charts.setOnLoadCallback(getData);
 
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Year', 'Billion Btu'],
-          
-          ['2015',234192],
-          ['2014',226863],
-          ['2013',229666],
-          ['2012',220020],
-          ['2011',222956],
-          ['2010',223518],
-          ['2009',213642],
-          ['2008',195232],
-          ['2007',190489],
-          ['2006',185564],
-          ['2005',183175],
-          ['2004',179462],
-          ['2003',188473],
-          ['2002',174327],
-          ['2001',158038],
-          ['2000',194952],
-          ['1999',204114],
-          ['1998',205485],
-          ['1997',231308],
-          ['1996',240343],
-          ['1995',220211],
-          ['1994',215563],
-          ['1993',217028],
-          ['1992',230779],
-          ['1991',212955],
-          ['1990',198986],
-          ['1989',232261],
-          ['1988',113802],
-          ['1987',107606],
-          ['1986',116356],
-          ['1985',110698],
-          ['1984',108740],
-          ['1983',91705],
-          ['1982',104674],
-          ['1981',83117],
-          ['1980',90049],
-          ['1979',69419],
-          ['1978',65357],
-          ['1977',59953],
-          ['1976',56507],
-          ['1975',50007],
-          ['1974',52429],
-          ['1973',56250],
-          ['1972',54389],
-          ['1971',49968],
-          ['1970',51035],
-          ['1969',51489],
-          ['1968',49556],
-          ['1967',44550],
-          ['1966',42760],
-          ['1965',39916],
-          ['1964',39016],
-          ['1963',38613],
-          ['1962',35826],
-          ['1961',34417],
-          ['1960',35680],
-          
-        ]);
-
-        var options = {
-          backgroundColor: '#a0d6b4',
-          bold: 'true',
-          italic: 'true',
-          title: 'Renewable energy production Florida',
-          curveType: 'function',
-          legend: { position: 'bottom' }
+      function drawChart(getNewData) {
+        console.log("getNewData", getNewData)
+         getNewData.unshift(["Year", "Billion BTUs"])
+        
+        
+        // function drawBasic(theActualData) {
+        //console.log("freshData", freshData)
+       // freshData.unshift(["Year", "Billion BTUs"])
+        
+   // var data = google.visualization.arrayToDataTable();
+        
+    var data = google.visualization.arrayToDataTable(getNewData);    
+          var options = {
+          title: 'Energy Production in Florida',
+          chartArea: {width: '50%'},
+          hAxis: {
+            title: 'BTUs',
+            minValue: 0
+          }
         };
+        
+       // var options = {
+         // backgroundColor: '#a0d6b4',
+        //  bold: 'true',
+      //    italic: 'true',
+      //    title: 'Renewable energy production Florida',
+      //    curveType: 'function',
+      //    legend: { position: 'bottom' }
+      //  };
 
-        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+       // var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+      //  chart.draw(data, options);
+    //  }
+
+
+  var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
 
         chart.draw(data, options);
       }
 
+
+    function getData(){
+        // Create a new request object
+        let request = new XMLHttpRequest()
+        // TODO: URL to contact goes here
+        let requestUrl = "https://api.eia.gov/series/?api_key=43fd391551b1a57ac02073fb37571ca7&series_id=SEDS.REPRB.FL.A"
+        // Open a connection
+        request.open('GET', requestUrl, true)
+        // Callback for when the request completes
+        request.onload = function(){
+          let theActualData = JSON.parse(request.response).series[0].data
+
+          drawChart(theActualData)
+        }
+        // Callback for when there's an error
+        request.error = function(err){
+          console.log("error is: ", err)
+        }
+        // Send the request to the specified URL
+        request.send()
+      }
+  
+   
+//* CHART Electricity Total Consumption in the state of Florida *//
 
       google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawVisualization);
@@ -219,19 +209,17 @@ google.charts.load('current', {'packages':['corechart']});
       backgroundColor: '#ffd3b6',
       bold: 'true',
       italic: 'true',
-      title : 'Electricity Total Consumption in the state of Florida',
+      title : 'Total Electricity Consumption in Florida',
       vAxis: {title: 'Billion Btu'},
       hAxis: {title: 'Year'},
       seriesType: 'bars',
       series: {5: {type: 'line'}}
     };
 
-    var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+    var chart = new google.visualization.ComboChart(document.getElementById('curve_chart'));
     chart.draw(data, options);
             
   }
-
-
 
 var app = new Vue({
   el: '#app',
@@ -239,7 +227,7 @@ var app = new Vue({
   
   },
   methods: {
-    showrenewableproduction: function(){
+    showrenewableenergyproduction: function(){
       console.log("test1 was called")
       document.getElementById("chart_div").innerHTML=""
       drawChart()
@@ -251,14 +239,4 @@ var app = new Vue({
   },
 }
 })
-
-
-    
-
-
-
-
-
-       
-  
-     
+ 
