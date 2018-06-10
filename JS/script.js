@@ -67,7 +67,7 @@ function openNav() {
 
 
 ///* chart from API *///
-
+///* Renewable Energy Production*//
 
 google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(getData);
@@ -85,7 +85,7 @@ google.charts.load('current', {'packages':['corechart']});
         
     var data = google.visualization.arrayToDataTable(getNewData);    
           var options = {
-          title: 'Energy Production in Florida',
+          title: 'Renewable Energy Production in Florida',
           chartArea: {width: '50%'},
           hAxis: {
             title: 'BTUs',
@@ -221,6 +221,16 @@ google.charts.load('current', {'packages':['corechart']});
             
   }
 
+////*  total consumption NEW CHART */////
+
+
+
+
+
+
+
+
+///* vue app *//
 var app = new Vue({
   el: '#app',
   data: {
@@ -235,7 +245,7 @@ var app = new Vue({
     showtotalconsumption: function(){
     console.log("test2 was called")
       document.getElementById("curve_chart").innerHTML=""
-    drawVisualization()
+    drawVisualization.()
   },
 }
 })
