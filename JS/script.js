@@ -76,12 +76,7 @@ google.charts.load('current', {'packages':['corechart']});
         console.log("getNewData", getNewData)
          getNewData.unshift(["Year", "Billion BTUs"])
         
-        
-        // function drawBasic(theActualData) {
-        //console.log("freshData", freshData)
-       // freshData.unshift(["Year", "Billion BTUs"])
-        
-   // var data = google.visualization.arrayToDataTable();
+       
         
     var data = google.visualization.arrayToDataTable(getNewData);    
           var options = {
@@ -93,21 +88,6 @@ google.charts.load('current', {'packages':['corechart']});
           }
         };
         
-       // var options = {
-         // backgroundColor: '#a0d6b4',
-        //  bold: 'true',
-      //    italic: 'true',
-      //    title: 'Renewable energy production Florida',
-      //    curveType: 'function',
-      //    legend: { position: 'bottom' }
-      //  };
-
-       // var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
-
-      //  chart.draw(data, options);
-    //  }
-
-
   var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
 
         chart.draw(data, options);
@@ -135,100 +115,51 @@ google.charts.load('current', {'packages':['corechart']});
         request.send()
       }
   
-   
-//* CHART Electricity Total Consumption in the state of Florida *//
+///* Chart 2 *///
 
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawVisualization);
+function drawtotalconsumption_chart(freshData2) {
+  console.log("freshData2", freshData2)
+  freshData2.unshift(['Year', 'Total Energy Consumption'])
 
-      function drawVisualization() {
-        // Some raw data (not necessarily accurate)
-        var data = google.visualization.arrayToDataTable([
-         ['Year', 'Billion Btu'],
-          
-          ['2016',804283],
-           ['2015',803865],
-           ['2014',771379],
-           ['2013',757189],
-           ['2012',752941],
-           ['2011',768009],
-           ['2010',788887],
-           ['2009',766848],
-           ['2008',771702],
-           ['2007',788461],
-           ['2006',778685],
-           ['2005',767622],
-           ['2004',745810],
-           ['2003',741696],
-           ['2002',718136],
-           ['2001',684966],
-           ['2000',668216],
-           ['1999',638966],
-           ['1998',639254],
-           ['1997',597240],
-           ['1996',586291],
-           ['1995',571483],
-           ['1994',544365],
-           ['1993',521176],
-            ['1992',501598],
-            ['1991',499299],
-            ['1990',489741],
-            ['1989',472473],
-            ['1988',444382],
-            ['1987',417862],
-            ['1986',398095],
-            ['1985',379307],
-            ['1984',353246],
-            ['1983',329216],
-            ['1982',315744],
-            ['1981',317921],
-            ['1980',309694],
-            ['1979',295551],
-            ['1978',289031],
-            ['1977',270767],
-            ['1976',252408],
-            ['1975',242096],
-            ['1974',235482],
-            ['1973',237104],
-            ['1972',209665],
-            ['1971',188564],
-            ['1970',171346],
-            ['1969',153032],
-            ['1968',135509],
-            ['1967',119314],
-            ['1966',108610],
-            ['1965',95878],
-            ['1964',87016],
-            ['1963',78258],
-            ['1962',71216],
-            ['1961',62705],
-            ['1960',57344],        
-      ]);
+  var data = google.visualization.arrayToDataTable(freshData2);
 
-    var options = {
+  // Chart Options
+  var options = {
+    title: 'II. Total Annual Electricity Consumption in Florida',
       backgroundColor: '#ffd3b6',
       bold: 'true',
       italic: 'true',
-      title : 'Total Electricity Consumption in Florida',
       vAxis: {title: 'Billion Btu'},
       hAxis: {title: 'Year'},
       seriesType: 'bars',
       series: {5: {type: 'line'}}
     };
+   
+    var chart = new google.visualization.LineChart(document.getElementById('totalconsumption_chart'));
+  chart.draw(data, options);
+}
+  
+  function getData2() {
 
-    var chart = new google.visualization.ComboChart(document.getElementById('curve_chart'));
-    chart.draw(data, options);
-            
+  let request = new XMLHttpRequest()
+
+  let requestUrl = "https://api.eia.gov/series/?api_key=4743ba4e54768007de0b9b2a0cadf0bd&series_id=SEDS.TETCB.FL.A"
+
+  request.open('GET', requestUrl, true)
+
+  request.onload = function () {
+
+    let theActualData2 = JSON.parse(request.response).series[0].data
+
+    drawtotalconsumption_chart(theActualDataTwo)
   }
 
-////*  total consumption NEW CHART */////
+  request.error = function (errTwo) {
+    console.log("error is: ", errTwo)
+  }
 
-
-
-
-
-
-
+  request.send()
+}
 
 ///* vue app *//
 var app = new Vue({
@@ -244,7 +175,7 @@ var app = new Vue({
     },
     showtotalconsumption: function(){
     console.log("test2 was called")
-      document.getElementById("curve_chart").innerHTML=""
+      document.getElementById("totalconsumption_chart").innerHTML=""
     drawVisualization()
   },
 }
