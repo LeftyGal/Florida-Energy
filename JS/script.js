@@ -80,7 +80,7 @@ google.charts.load('current', {'packages':['corechart']});
         
     var data = google.visualization.arrayToDataTable(getNewData);    
           var options = {
-          title: 'Renewable Energy Production in Florida',
+          title: 'I. Renewable Energy Production in Florida',
           chartArea: {width: '50%'},
           hAxis: {
             title: 'BTUs',
@@ -175,7 +175,7 @@ var app = new Vue({
     },
     showtotalconsumption: function(){
     console.log("test2 was called")
-      document.getElementById("totalconsumption_chart").innerHTML=""
+      document.getElementById("chart_div").innerHTML=""
     drawVisualization()
   },
 }
